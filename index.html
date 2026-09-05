@@ -61,28 +61,13 @@ h1{font-size:clamp(48px,7vw,88px);line-height:.98;letter-spacing:-3px;margin:22p
 .event-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.role{display:inline-block;margin:9px 0 14px;padding:5px 9px;border-radius:999px;background:rgba(166,77,255,.1);color:#d3b6ff;font-size:11px;font-weight:750}
 .campaign-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.campaign{overflow:hidden}.thumb{height:150px;border-radius:13px;background:linear-gradient(135deg,#17223a,#101725);display:grid;place-items:center;color:#63728a;font-size:12px;border:1px solid var(--line);margin-bottom:18px}.platform{color:#b9c8db;font-size:12px;margin:9px 0}.statrow{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:15px}.statrow div{padding:9px 5px;text-align:center;background:#0d1727;border-radius:9px}.statrow b{display:block;font-size:15px}.statrow span{font-size:9px;color:var(--muted)}
 .cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.cert{padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--card)}.cert b{display:block}.cert small{display:block;color:var(--muted);margin-top:4px}
-.edu-roadmap{position:relative;max-width:1100px;height:560px;margin:6px auto 0;overflow:hidden}
-.edu-road{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
-.edu-road .road-base{fill:none;stroke:rgba(40,215,255,.11);stroke-width:46;stroke-linecap:round}
-.edu-road .road-glow{fill:none;stroke:url(#eduRoadGrad);stroke-width:4;stroke-linecap:round;filter:drop-shadow(0 0 8px rgba(40,215,255,.55))}
-.edu-road .road-dash{fill:none;stroke:rgba(255,255,255,.5);stroke-width:2;stroke-dasharray:8 11;stroke-linecap:round}
-.edu-item{position:absolute;left:0;right:0;display:grid;grid-template-columns:1fr 76px 1fr;align-items:center;z-index:2}
-.edu-e1{top:18px}.edu-e2{top:153px}.edu-e3{top:288px}.edu-e4{top:423px}
-.edu-left .edu-card{grid-column:1}.edu-left .edu-node{grid-column:2}.edu-right .edu-node{grid-column:2}.edu-right .edu-card{grid-column:3}
-.edu-card{width:min(440px,100%);padding:13px 18px;border:1px solid rgba(117,143,177,.22);border-radius:15px;background:linear-gradient(145deg,rgba(19,29,46,.94),rgba(9,16,28,.9));box-shadow:0 16px 35px rgba(0,0,0,.2),0 0 25px rgba(40,215,255,.035);backdrop-filter:blur(12px);position:relative}
-.edu-left .edu-card{justify-self:end;margin-right:18px}.edu-right .edu-card{justify-self:start;margin-left:18px}
-.edu-card:after{content:"";position:absolute;top:50%;width:28px;height:1px;background:rgba(40,215,255,.55)}
-.edu-left .edu-card:after{right:-29px}.edu-right .edu-card:after{left:-29px}
-.edu-node{width:54px;height:54px;border-radius:50%;justify-self:center;display:grid;place-items:center;font-size:25px;background:radial-gradient(circle at 35% 25%,#28d7ff,#6f4cff 70%,#142342);border:2px solid rgba(255,255,255,.16);box-shadow:0 0 0 6px rgba(40,215,255,.06),0 0 24px rgba(40,215,255,.28);position:relative}
-.edu-node:before{content:"";position:absolute;inset:-9px;border-radius:50%;border:1px solid rgba(40,215,255,.18)}
-.edu-item h3{font-size:17px;line-height:1.25;margin-bottom:4px}.edu-item p{color:var(--muted);font-size:12px;line-height:1.35}.edu-year{color:var(--cyan);font-size:11px;font-weight:800;letter-spacing:.08em;margin-bottom:5px}
-@media(max-width:750px){.edu-roadmap{height:auto;min-height:0;padding-left:28px;overflow:visible}.edu-road{left:0;width:55px;height:100%;}.edu-road .road-base{stroke-width:30}.edu-road .road-glow{stroke-width:3}.edu-road .road-dash{stroke-width:1.5}.edu-item,.edu-e1,.edu-e2,.edu-e3,.edu-e4{position:relative;top:auto;left:auto;right:auto;width:100%;display:grid;grid-template-columns:48px 1fr;margin:0;padding:12px 0;align-items:center}.edu-left .edu-card,.edu-right .edu-card{grid-column:2;grid-row:1;justify-self:start;margin:0;width:100%;}.edu-left .edu-node,.edu-right .edu-node{grid-column:1;grid-row:1}.edu-card:after{display:none}.edu-node{width:42px;height:42px;font-size:19px}.edu-item h3{font-size:16px}}
+.edu{position:relative;max-width:900px;margin:auto}.edu:before{content:"";position:absolute;left:91px;top:0;bottom:0;width:1px;background:linear-gradient(var(--cyan),var(--purple),transparent)}.edu-item{display:grid;grid-template-columns:80px 40px 1fr;gap:12px;padding:18px 0;align-items:start}.edu-year{color:var(--cyan);font-weight:800;font-size:12px;padding-top:3px}.edu-dot{width:14px;height:14px;border-radius:50%;background:var(--purple);margin-top:4px;box-shadow:0 0 18px rgba(166,77,255,.6)}.edu-item h3{font-size:18px}.edu-item p{color:var(--muted);font-size:14px}
 .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:20px}.contact-list{display:grid;gap:11px}.contact{padding:17px;border:1px solid var(--line);border-radius:13px;background:var(--card)}.contact small{display:block;color:var(--muted);font-size:11px}.contact b{font-size:14px}
 form{display:grid;gap:13px}.field{display:grid;gap:6px}.field label{font-size:12px;color:#c7d2df}.field input,.field textarea{background:#0d1727;border:1px solid var(--line);border-radius:10px;padding:12px;color:white;font:inherit;outline:none}.field input:focus,.field textarea:focus{border-color:rgba(40,215,255,.55)}textarea{min-height:145px;resize:vertical}
 footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:var(--muted);font-size:12px}
-.reveal{opacity:0;transform:translateY(18px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+.reveal{opacity:1;transform:none;transition:.7s ease}.reveal.show{opacity:1;transform:none}
 @media(max-width:950px){.navlinks{display:none}.menu{display:block}.hero-grid{grid-template-columns:1fr}.hero-art{min-height:470px}.kpi-grid{grid-template-columns:repeat(3,1fr)}.kpi:nth-child(3){border:0}.cards,.report-grid,.campaign-grid{grid-template-columns:1fr 1fr}.metrics{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:650px){section{padding:70px 0}.hero{min-height:auto;padding-top:55px}.hero-art{min-height:430px}.portrait{width:210px;height:210px;font-size:52px}.orbit{width:330px;height:330px}.float{transform:scale(.9)}.f1{left:-4px}.f2{right:-5px}.f5{right:-15px}.kpi-grid{grid-template-columns:repeat(2,1fr)}.kpi{border-bottom:1px solid var(--line)}.cards,.report-grid,.campaign-grid,.event-grid,.cert-grid{grid-template-columns:1fr}.exp-card{grid-template-columns:1fr}.metrics{grid-template-columns:1fr 1fr}.edu:before{left:77px}.contact-grid{grid-template-columns:1fr}.navlinks.mobile{display:flex;position:absolute;top:72px;left:0;right:0;padding:18px 4%;background:#0a101c;flex-direction:column;border-bottom:1px solid var(--line)}h1{letter-spacing:-2px}}
+@media(max-width:650px){section{padding:70px 0}.hero{min-height:auto;padding-top:55px}.hero-art{min-height:430px}.portrait{width:210px;height:210px;font-size:52px}.orbit{width:330px;height:330px}.float{transform:scale(.9)}.f1{left:-4px}.f2{right:-5px}.f5{right:-15px}.kpi-grid{grid-template-columns:repeat(2,1fr)}.kpi{border-bottom:1px solid var(--line)}.cards,.report-grid,.campaign-grid,.event-grid,.cert-grid{grid-template-columns:1fr}.exp-card{grid-template-columns:1fr}.metrics{grid-template-columns:1fr 1fr}.edu:before{left:77px}.edu-item{grid-template-columns:65px 25px 1fr}.contact-grid{grid-template-columns:1fr}.navlinks.mobile{display:flex;position:absolute;top:72px;left:0;right:0;padding:18px 4%;background:#0a101c;flex-direction:column;border-bottom:1px solid var(--line)}h1{letter-spacing:-2px}}
 </style>
 </head>
 <body>
@@ -98,7 +83,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:v
 <h1 aria-label="Neeraj Sharma"><span class="type-name" id="typedName"></span><span class="type-cursor" id="typeCursor" aria-hidden="true"></span></h1>
 <h2>Driving Business Growth through Research, Marketing &amp; Financial Excellence.</h2>
 <p>I help organizations make informed business decisions through market intelligence, strategic research, financial analysis, and data-driven recommendations.</p>
-<div class="actions"><a class="btn primary" href="#" onclick="alert('Add your final resume PDF link here.');return false">↓ Download Resume</a><a class="btn glass" href="#contact">Contact Me →</a></div>
+<div class="actions"><a class="btn primary" href="Neeraj_Sharma_Resume.pdf" target="_blank" rel="noopener">↓ Download Resume</a><a class="btn glass" href="#contact">Contact Me →</a></div>
 <div class="social"><a href="https://www.linkedin.com/in/neerajsharma8637" target="_blank" rel="noopener" aria-label="LinkedIn">in</a><a href="https://www.instagram.com/its_neeraj_sharma" target="_blank" rel="noopener" aria-label="Instagram">◎</a><a href="mailto:neerajsharma8637@gmail.com" aria-label="Email">✉</a></div></div>
 <div class="hero-art reveal"><div class="orbit"></div><div class="portrait" aria-label="Neeraj Sharma avatar">
 <canvas id="profileAvatar" class="avatar-canvas" width="900" height="900" aria-label="Neeraj Sharma semi-realistic professional avatar"></canvas></div>
@@ -133,9 +118,9 @@ footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:v
 
 <section id="portfolio"><div class="container reveal"><div class="section-head"><div class="section-no">05 / PROJECTS &amp; PORTFOLIO</div><h2>Research Portfolio</h2><p>Industry-focused business research projects completed during my MBA, combining field research, market intelligence, and strategic analysis to deliver actionable business insights.</p></div>
 <div class="report-grid">
-<div class="card report"><div class="label">MARKET RESEARCH • COMPETITOR ANALYSIS</div><h3>Quantic Cloud Technologies</h3><p>Market Research Portfolio</p><ul><li>Market Size &amp; Trends</li><li>Competitor Benchmarking</li><li>Customer Insights</li><li>Strategic Recommendations</li></ul><div class="open">Explore Report →</div></div>
-<div class="card report"><div class="label">INDUSTRY RESEARCH • DEALER MAPPING</div><h3>Deco Logic</h3><p>Industry Research Portfolio</p><ul><li>Door Manufacturing Industry</li><li>Dealer Network Mapping</li><li>Factory Visit Insights</li><li>Business Recommendations</li></ul><div class="open">Explore Report →</div></div>
-<div class="card report"><div class="label">BUSINESS RESEARCH • MARKETING STRATEGY</div><h3>Veloxdeal Pvt. Ltd.</h3><p>Business Research Portfolio</p><ul><li>Business &amp; Industry Analysis</li><li>Customer Research</li><li>Marketing Strategy Assessment</li><li>Growth Recommendations</li></ul><div class="open">Explore Report →</div></div>
+<div class="card report"><div class="label">MARKET RESEARCH • COMPETITOR ANALYSIS</div><h3>Quantic Cloud Technologies</h3><p>Market Research Portfolio</p><ul><li>Market Size &amp; Trends</li><li>Competitor Benchmarking</li><li>Customer Insights</li><li>Strategic Recommendations</li></ul></div>
+<div class="card report"><div class="label">INDUSTRY RESEARCH • DEALER MAPPING</div><h3>Deco Logic</h3><p>Industry Research Portfolio</p><ul><li>Door Manufacturing Industry</li><li>Dealer Network Mapping</li><li>Factory Visit Insights</li><li>Business Recommendations</li></ul></div>
+<div class="card report"><div class="label">BUSINESS RESEARCH • MARKETING STRATEGY</div><h3>Veloxdeal Pvt. Ltd.</h3><p>Business Research Portfolio</p><ul><li>Business &amp; Industry Analysis</li><li>Customer Research</li><li>Marketing Strategy Assessment</li><li>Growth Recommendations</li></ul></div>
 </div>
 
 <div class="section-head" style="margin-top:70px"><div class="section-no">05B / ON GROUND EXPERIENCE</div><h2>Leadership &amp; Events</h2></div>
@@ -169,17 +154,11 @@ footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:v
 </div></div></section>
 
 <section id="academics"><div class="container reveal"><div class="section-head"><div class="section-no">07 / ACADEMICS</div><h2>Academic Roadmap</h2></div>
-<div class="edu-roadmap">
-<svg class="edu-road" viewBox="0 0 1000 560" preserveAspectRatio="none" aria-hidden="true">
-<defs><linearGradient id="eduRoadGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#28d7ff"/><stop offset="50%" stop-color="#a64dff"/><stop offset="100%" stop-color="#28d7a3"/></linearGradient></defs>
-<path class="road-base" d="M500 34 L500 526"/>
-<path class="road-glow" d="M500 34 L500 526"/>
-<path class="road-dash" d="M500 34 L500 526"/>
-</svg>
-<div class="edu-item edu-left edu-e1"><div class="edu-card"><div class="edu-year">2025–27 • Current</div><h3>MBA — Dual Specialization in Marketing &amp; Finance</h3><p>Acropolis Faculty of Management &amp; Research, Indore</p></div><div class="edu-node">🎓</div></div>
-<div class="edu-item edu-right edu-e2"><div class="edu-node">🎓</div><div class="edu-card"><div class="edu-year">2022–25 • Completed</div><h3>B.Com — Computer Application</h3><p>Vikram University, Ujjain</p></div></div>
-<div class="edu-item edu-left edu-e3"><div class="edu-card"><div class="edu-year">2022 • Completed</div><h3>Class 12 — Commerce</h3><p>Mastermind Sr. Sec. School, Sarangpur • CBSE • <b>79%</b></p></div><div class="edu-node">📚</div></div>
-<div class="edu-item edu-right edu-e4"><div class="edu-node">📖</div><div class="edu-card"><div class="edu-year">2020 • Completed</div><h3>Class 10</h3><p>Mastermind Sr. Sec. School, Sarangpur • CBSE • <b>60%</b></p></div></div>
+<div class="edu">
+<div class="edu-item"><div class="edu-year">2025–27</div><div class="edu-dot"></div><div><h3>MBA — Dual Specialization in Marketing &amp; Finance</h3><p>Acropolis Faculty of Management &amp; Research, Indore</p></div></div>
+<div class="edu-item"><div class="edu-year">2022–25</div><div class="edu-dot"></div><div><h3>B.Com — Computer Application</h3><p>Vikram University, Ujjain</p></div></div>
+<div class="edu-item"><div class="edu-year">2022</div><div class="edu-dot"></div><div><h3>Class 12 — Commerce</h3><p>Mastermind Sr. Sec. School, Sarangpur • CBSE • <b>79%</b></p></div></div>
+<div class="edu-item"><div class="edu-year">2020</div><div class="edu-dot"></div><div><h3>Class 10</h3><p>Mastermind Sr. Sec. School, Sarangpur • CBSE • <b>60%</b></p></div></div>
 </div></div></section>
 
 <section id="contact"><div class="container reveal"><div class="section-head" style="text-align:center"><div class="section-no">08 / CONTACT</div><h2>Let's Connect</h2><p style="margin:auto">Get in touch for opportunities and collaborations.</p></div>

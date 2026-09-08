@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bajaj Finance & NBFC Awareness Test</title>
+<style>
+:root{--navy:#0b2b52;--blue:#1677d2;--light:#eef6ff;--green:#159a72;--red:#d94b4b;--text:#182536;--muted:#64748b}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:linear-gradient(135deg,#edf5ff,#f8fbff);color:var(--text)}
+.wrap{max-width:900px;margin:auto;padding:28px 16px 50px}.hero{background:linear-gradient(135deg,var(--navy),#145ca6);color:#fff;border-radius:24px;padding:34px 30px;box-shadow:0 18px 45px #0b2b5222}.hero h1{margin:0 0 8px;font-size:32px}.hero p{margin:6px 0;opacity:.9}.tag{display:inline-block;margin-top:14px;padding:7px 12px;border-radius:999px;background:#ffffff20;font-size:13px}
+.card{background:#fff;border-radius:20px;margin-top:20px;padding:26px;box-shadow:0 10px 30px #0b2b5212}.meta{display:flex;justify-content:space-between;color:var(--muted);font-size:14px;margin-bottom:18px}.q{font-size:21px;font-weight:700;line-height:1.4;margin-bottom:20px}.opt{display:block;border:1.5px solid #d7e1ec;border-radius:13px;padding:14px 15px;margin:11px 0;cursor:pointer;transition:.15s;background:#fff}.opt:hover{border-color:var(--blue);background:var(--light)}.opt input{margin-right:10px}.actions{display:flex;gap:10px;margin-top:22px}.btn{border:0;border-radius:12px;padding:13px 20px;font-weight:700;cursor:pointer;font-size:15px}.primary{background:var(--blue);color:#fff}.secondary{background:#eaf1f8;color:var(--navy)}.hidden{display:none}.progress{height:8px;background:#e6edf5;border-radius:20px;overflow:hidden;margin-bottom:20px}.bar{height:100%;background:var(--blue);width:5%;transition:.2s}.result{text-align:center}.score{font-size:72px;font-weight:800;color:var(--navy);margin:8px 0}.badge{display:inline-block;padding:8px 14px;border-radius:999px;background:#e8f7f1;color:#08785a;font-weight:700}.review{text-align:left;margin-top:24px}.review div{padding:13px 0;border-bottom:1px solid #e7edf3}.good{color:var(--green);font-weight:700}.bad{color:var(--red);font-weight:700}.small{font-size:13px;color:var(--muted);line-height:1.5}.name{width:100%;padding:13px;border:1.5px solid #d7e1ec;border-radius:12px;font-size:16px;margin:8px 0 12px}.footer{text-align:center;color:var(--muted);font-size:12px;margin-top:20px}
+@media(max-width:600px){.hero h1{font-size:25px}.card{padding:20px}.q{font-size:18px}.score{font-size:58px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<section class="hero"><h1>Bajaj Finance & NBFC Awareness Test</h1><p>Practice assessment covering NBFC fundamentals, FY2026 figures, Union Budget 2026–27, credit risk and managerial decision-making.</p><span class="tag">20 Questions • Self-Practice • Instant Score</span></section>
+<div id="start" class="card">
+<h2>Before you begin</h2><input id="name" class="name" placeholder="Your name (optional)">
+<p class="small">This is an independent practice assessment. It is not an official Bajaj Finance certification or assessment.</p>
+<button class="btn primary" onclick="startQuiz()">Start Test →</button>
+</div>
+<div id="quiz" class="card hidden"><div class="meta"><span id="counter">Question 1 of 20</span><span id="live">Score: 0</span></div><div class="progress"><div id="bar" class="bar"></div></div><div id="question"></div><div class="actions"><button id="next" class="btn primary" onclick="nextQ()">Next →</button></div></div>
+<div id="result" class="card hidden result"><h2>Assessment Complete 🎯</h2><div id="greeting"></div><div class="score" id="score"></div><div id="badge" class="badge"></div><p>Use this result as a learning checkpoint—not as an official professional certification.</p><button class="btn primary" onclick="location.reload()">Take Again</button><div id="review" class="review"></div></div>
+<div class="footer">Academic / career-practice resource • Created for learning and interview preparation</div>
+</div>
+<script>
+const questions=[
+['What is Bajaj Finance primarily classified as?',['Commercial Bank','NBFC','Insurance Company','Asset Management Company'],1],
+['What was Bajaj Finance’s AUM in FY2026?',['₹416,661 crore','₹450,000 crore','₹509,975 crore','₹550,975 crore'],2],
+['Which Union Budget 2026–27 measure most directly connects to MSME working-capital/invoice financing?',['₹12.2 lakh crore public CapEx','TReDS reforms','High Level Committee on Banking for Viksit Bharat','City Economic Regions'],1],
+['What was Bajaj Finance’s customer franchise in FY2026?',['101.8 million','109.33 million','119.33 million','129.33 million'],2],
+['Which metric represents the size of a managed lending portfolio?',['ROE','GNPA','AUM','Cost of Funds'],2],
+['If loan demand rises because of stronger economic activity, what should management do first?',['Maximize lending regardless of borrower quality','Reduce lending sharply','Match growth with strong underwriting and risk controls','Focus only on customer acquisition'],2],
+['What were Bajaj Finance’s FY2026 asset-quality indicators?',['GNPA 1.01%, NNPA 0.41%','GNPA 0.41%, NNPA 1.01%','GNPA 1.92%, NNPA 0.41%','GNPA 0.96%, NNPA 0.44%'],0],
+['If cost of funds increases significantly while borrower rates remain unchanged, what is the most direct concern?',['Lower customer acquisition automatically','Pressure on lending margins/profitability','Increase in customer franchise automatically','Reduction in GNPA automatically'],1],
+['What does GNPA primarily indicate?',['Customer acquisition growth','Loans that have become non-performing','Return earned on equity','Funding cost'],1],
+['If early-stage delinquencies increase in a customer segment, what is the best response?',['Increase lending aggressively','Ignore the trend until GNPA rises','Strengthen monitoring, review underwriting and improve collections','Stop lending to every segment'],2],
+['The Budget 2026–27 NBFC vision emphasizes credit-disbursement and technology-adoption targets. What is the likely strategic implication?',['Reduce technology investment','Focus only on physical branches','Combine responsible credit growth with stronger digital/technology capabilities','Stop expanding the customer base'],2],
+['If funding costs rise while customer lending rates remain unchanged, what happens immediately?',['Lending margin comes under pressure','GNPA automatically falls','AUM automatically decreases','Customer franchise automatically increases'],0],
+['Which metrics most directly assess deterioration in loan-portfolio asset quality?',['Customer franchise','AUM growth','GNPA and NNPA','Cost of funds'],2],
+['Why is a large customer franchise strategically valuable for an NBFC?',['It guarantees every customer will take a loan','It creates a base for cross-selling, retention and future financial relationships','It eliminates credit risk','It guarantees higher GNPA'],1],
+['As a Deputy Manager, strong disbursement targets are accompanied by rising early-stage delinquencies. What should be the first priority?',['Push disbursements further','Ignore delinquencies because GNPA has not risen','Investigate the source and strengthen credit/collection controls','Stop all lending immediately'],2],
+['Which Budget 2026–27 measure is most directly designed to improve MSMEs’ access to working-capital/invoice financing?',['₹12.2 lakh crore public CapEx','TReDS reforms','₹100 crore municipal bond incentive','High Level Committee on Banking for Viksit Bharat'],1],
+['If AUM grows rapidly but credit losses and operating costs also rise substantially, what is the key concern?',['AUM growth automatically guarantees higher profitability','Growth may not translate into sustainable profitability','Higher costs always improve ROE','Credit losses have no impact on profitability'],1],
+['Which combination best represents a Deputy Manager’s core responsibility in an NBFC?',['Only achieve sales targets','Only reduce credit risk','Drive business growth while maintaining customer service, credit quality, compliance and team performance','Focus only on increasing AUM'],2],
+['Which statement best describes healthy NBFC growth?',['Maximum disbursement regardless of risk','Growth balanced with margins, asset quality, funding efficiency and compliance','Only branch expansion','Only customer acquisition'],1],
+['Which mindset is most important for an NBFC manager?',['Short-term numbers at any cost','Balance growth, customer outcomes, risk, compliance and sustainable profitability','Avoid all lending risk by stopping growth','Focus only on technology'],1]
+];
+let i=0,score=0,answers=[],name='';
+function startQuiz(){name=document.getElementById('name').value.trim();document.getElementById('start').classList.add('hidden');document.getElementById('quiz').classList.remove('hidden');render();}
+function render(){const q=questions[i];document.getElementById('counter').textContent=`Question ${i+1} of ${questions.length}`;document.getElementById('live').textContent=`Score: ${score}`;document.getElementById('bar').style.width=((i+1)/questions.length*100)+'%';let html='<div class="q">'+q[0]+'</div>';q[1].forEach((o,n)=>html+=`<label class="opt"><input type="radio" name="answer" value="${n}">${String.fromCharCode(65+n)}. ${o}</label>`);document.getElementById('question').innerHTML=html;document.getElementById('next').textContent=i===questions.length-1?'Finish Test ✓':'Next →';}
+function nextQ(){const sel=document.querySelector('input[name=answer]:checked');if(!sel){alert('Please select an answer.');return}const a=Number(sel.value);answers.push(a);if(a===questions[i][2])score++;i++;if(i<questions.length)render();else showResult();}
+function showResult(){document.getElementById('quiz').classList.add('hidden');document.getElementById('result').classList.remove('hidden');const pct=Math.round(score/questions.length*100);document.getElementById('greeting').innerHTML=name?`<p>Well done, <strong>${escapeHtml(name)}</strong>!</p>`:'';document.getElementById('score').textContent=`${pct}%`;document.getElementById('badge').textContent=`${score} / ${questions.length} correct`;let html='<h3>Answer Review</h3>';questions.forEach((q,n)=>{const ok=answers[n]===q[2];html+=`<div><span class="${ok?'good':'bad'}">${ok?'✓ Correct':'✕ Review'}</span> — Q${n+1}: ${q[0]}<br><span class="small">Correct answer: ${String.fromCharCode(65+q[2])}. ${q[1][q[2]]}</span></div>`});document.getElementById('review').innerHTML=html;}
+function escapeHtml(s){return s.replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}
+</script></body></html>
